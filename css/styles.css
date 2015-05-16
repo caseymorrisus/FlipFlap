@@ -273,6 +273,7 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
+  margin-right: 40px;
 }
 nav a:hover {
   text-decoration: underline;
@@ -287,6 +288,7 @@ footer {
 footer a {
   color: #e74c3c;
   text-decoration: none;
+  margin-left: 10px;
 }
 html {
   background: #e74c3c;
