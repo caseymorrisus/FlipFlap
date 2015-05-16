@@ -7,18 +7,75 @@
     <!-- link(href='http://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400', rel='stylesheet', type='text/css')-->
     <link rel="stylesheet" href="css/styles.css">
     <body>
-      <nav>Test For Nav</nav>
+      <nav> <a href="http://caseypmorris.com">Built by Casey Morris</a></nav>
       <header> 
         <h1>FlipFlap</h1>
         <h3>Easily create animations using a series of images</h3>
       </header>
       <div class="sample">
-        <div id="sequence0" class="img-sequence">
+        <div id="sequence" class="img-sequence">
           <div class="loading">
             <p>0%</p>
             <div class="progress"></div>
           </div>
           <h2>Infinite Reverse Loop</h2>
+        </div>
+      </div>
+      <div class="quickstart">
+        <h1>Quick Start</h1>
+        <p>The above animation uses the following settings and code: </p>
+        <h3>JavaScript</h3>
+        <div class="code"><span class="pink">$</span>(<span class="khaki">'#sequence'</span>).flipFlap({
+          <div class="indent">dir: <span class="khaki">"img/"</span>,</div>
+          <div class="indent">digits: <span class="purple">4</span>,</div>
+          <div class="indent">end: <span class="purple">60</span>,</div>
+          <div class="indent">extension: <span class="khaki">".png"</span>,</div>
+          <div class="indent">fps: <span class="purple">60</span>,</div>
+          <div class="indent">loopAmount: <span class="khaki">'infinite'</span>,</div>
+          <div class="indent">loopType: <span class="khaki">"reverse"</span>,</div>
+          <div class="indent">name: <span class="khaki">"crystal"</span>,</div>
+          <div class="indent">start: <span class="purple">0</span>,</div>
+          <div class="indent">trailing: <span class="purple">true</span></div>)};
+        </div>
+        <h3>HTML</h3>
+        <div class="code"> &lt;<span class="pink">div</span> <span class="green">id</span>=<span class="khaki">"sequence"</span> <span class="green">class</span>=<span class="khaki">"img-sequence"</span>&gt;
+          <div class="indent">&lt;<span class="pink">div</span> <span class="green">class</span>=<span class="khaki">"loading"</span>&gt;
+            <div class="indent">&lt;<span class="pink">p</span>&gt;0%&lt;/<span class="pink">p</span>&gt;</div>
+            <div class="indent">&lt;<span class="pink">div</span> <span class="green">class</span>=<span class="khaki">"progress"</span>&gt;&lt;/<span class="pink">div</span>&gt;</div>
+          </div>
+          <div class="indent">&lt;/<span class="pink">div</span>&gt;</div>
+          <div class="indent">&lt;<span class="pink">h2</span>&gt;Infinite Reverse Loop&lt;/<span class="pink">h2</span>&gt;</div>&lt;/<span class="pink">div</span>&gt;
+        </div>
+        <h3>Dependencies</h3>
+        <div class="code">&lt;<span class="pink">script</span> <span class="green">type</span>=<span class="khaki">"text/javascript"</span> <span class="green">src</span>=<span class="khaki">"js/libs/jquery.js"</span>&gt;&lt;/<span class="pink">script</span>&gt;<br>&lt;<span class="pink">script</span> <span class="green">type</span>=<span class="khaki">"text/javascript"</span> <span class="green">src</span>=<span class="khaki">"js/libs/preload.js.js"</span>&gt;&lt;/<span class="pink">script</span>&gt;<br>&lt;<span class="pink">script</span> <span class="green">type</span>=<span class="khaki">"text/javascript"</span> <span class="green">src</span>=<span class="khaki">"js/libs/flipflap.js"</span>&gt;&lt;/<span class="pink">script</span>&gt;</div>
+        <h3>CSS</h3>
+        <div class="code"><span class="green">.img-sequence</span> {
+          <div class="indent"><span class="blue">position</span>: relative;</div>
+          <div class="indent"><span class="blue">width</span>: <span class="purple">400</span><span class="pink">px</span>;</div>
+          <div class="indent"><span class="blue">height</span>: <span class="purple">300</span><span class="pink">px</span>;</div>
+          <div class="indent"><span class="blue">margin</span>: <span class="purple">0 15</span><span class="pink">px</span>;</div>
+          <div class="indent"><span class="blue">display</span>: inline-block;</div>}<br><br><span class="green">.img-sequence</span> <span class="pink">img</span> {
+          <div class="indent"><span class="blue">display</span>: none;</div>}<br><br><span class="green">.loading</span> {
+          <div class="indent"><span class="blue">position</span>: relative;</div>
+          <div class="indent"><span class="blue">display</span>: block;</div>
+          <div class="indent"><span class="blue">margin</span>: <span class="purple">0</span> auto;</div>
+          <div class="indent"><span class="blue">width</span>: <span class="purple">400</span><span class="pink">px</span>;</div>
+          <div class="indent"><span class="blue">box-sizing</span>: border-box;</div>
+          <div class="indent"><span class="blue">border</span>: <span class="purple">3</span><span class="pink">px</span> solid <span class="purple">#FF0000</span>;</div>
+          <div class="indent"><span class="blue">text-align</span>: center;</div>}<br><br><span class="green">.loading</span> <span class="pink">p</span> {
+          <div class="indent"><span class="blue">color</span>: <span class="purple">#FFFFFF</span>;</div>
+          <div class="indent"><span class="blue">font-weight</span>: <span class="purple">900</span>;</div>
+          <div class="indent"><span class="blue">font-size</span>: <span class="purple">2</span><span class="pink">em</span>;</div>
+          <div class="indent"><span class="blue">position</span>: relative;</div>
+          <div class="indent"><span class="blue">z-index</span>: <span class="purple">1</span>;</div>}<br><br><span class="green">.loading .progress</span> {
+          <div class="indent"><span class="blue">top</span>: <span class="purple">0</span>;</div>
+          <div class="indent"><span class="blue">left</span>: <span class="purple">0</span>;</div>
+          <div class="indent"><span class="blue">z-index</span>: <span class="purple">0</span>;</div>
+          <div class="indent"><span class="blue">background</span>: <span class="purple">#FF0000</span>;</div>
+          <div class="indent"><span class="blue">width</span>: <span class="purple">0</span><span class="pink">%</span>;</div>
+          <div class="indent"><span class="blue">height</span>: <span class="purple">100</span><span class="pink">%</span>;</div>
+          <div class="indent"><span class="blue">display</span>: block;</div>
+          <div class="indent"><span class="blue">position</span>: absolute;</div>}
         </div>
       </div>
       <div class="documentation">
@@ -127,7 +184,7 @@
           </tr>
         </table>
       </div>
-      <footer>Test For Footer</footer>
+      <footer>Built by <a href="http://caseypmorris.com">Casey Morris</a></footer>
     </body>
     <script type="text/javascript" src="js/libs/jquery.js"></script>
     <script type="text/javascript" src="js/libs/preload.js"></script>

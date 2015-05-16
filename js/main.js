@@ -281,7 +281,7 @@
 		}
 	}
 
-	$('#sequence0').flipFlap({
+	$('#sequence').flipFlap({
 		dir: "img/",
 		name: "crystal",
 		extension : ".png",
