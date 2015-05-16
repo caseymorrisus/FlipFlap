@@ -232,7 +232,7 @@ table {
   }
 }
 html {
-  font-family: 'Monda', sans-serif;
+  font-family: 'Arial';
   font-size: 1em;
 }
 h1 {
@@ -288,7 +288,6 @@ footer {
 footer a {
   color: #e74c3c;
   text-decoration: none;
-  margin-left: 10px;
 }
 html {
   background: #e74c3c;
