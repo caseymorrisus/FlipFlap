@@ -3,8 +3,6 @@ FlipFlap
 
 Easily create animations using a series of images
 
-![stylusgui](http://caseymorrisus.github.io/Minnowfier/img/minnow_preview.png)
-
 Quickstart
 ----------
 
