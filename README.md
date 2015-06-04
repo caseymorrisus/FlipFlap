@@ -94,4 +94,8 @@ CSS
 }
 ```
 
+Options
+-------
+[See FlipFlap Page](http://caseymorrisus.github.io/FlipFlap/)
+
 
